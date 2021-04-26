@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">nytimes</string>
+
+    <string name="string">Lorem Ipsum </string>
+    <string name="mediumstring"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="longstring"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry is standard dummy text ever since the 1500s </string>
+
+
+    <string name="search_hint">Search </string>
+
+    <string name="full_name"> The New York Time</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="btn_explore">Open Website</string>
+    <string name="title_activity_test">testActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="error">Please Wait and try again later..</string>
+
+    <string name="status_off"> Device is offline. Please check your Internet and try again. </string>
+
+</resources>

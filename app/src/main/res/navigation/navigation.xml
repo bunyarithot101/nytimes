@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/listFragment">
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.nytimes.list.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/item_animation_from_bottom" />
+        <action
+            android:id="@+id/action_listFragment_to_serachFragment"
+            app:destination="@id/serachFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_errorFragment"
+            app:destination="@id/errorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.nytimes.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="result"
+            app:argType="com.example.nytimes.list.resultsList" />
+    </fragment>
+    <fragment
+        android:id="@+id/serachFragment"
+        android:name="com.example.nytimes.serach.SerachFragment"
+        android:label="fragment_serach"
+        tools:layout="@layout/fragment_serach" >
+        <action
+            android:id="@+id/action_serachFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/item_animation_from_bottom" />
+        <action
+            android:id="@+id/action_serachFragment_to_errorFragment"
+            app:destination="@id/errorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/errorFragment"
+        android:name="com.example.nytimes.handle.errorFragment"
+        android:label="fragment_error"
+        tools:layout="@layout/fragment_error" />
+</navigation>
